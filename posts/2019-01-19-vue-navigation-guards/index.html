@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> VueのNavigation Guards | Daddies Stories</title>
   <link rel = 'canonical' href = 'https://daddiesstories.github.io/posts/2019-01-19-vue-navigation-guards/'>
-  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="description" content="Repositori seorang calon bapack">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -18,9 +18,10 @@
  globally per-route in-component  NOTE:
  Params or query changes won&rsquo;t trigger enter/leave navigation guards. You can either watch the $route object to react to those changes, or use the beforeRouteUpdate in-component guard. Make sure to always call the next function, otherwise the hook will never be resolved.  Global 1const router = new VueRouter({ ... }) 2 3// Before Guards 4router." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-01-19-vue-navigation-guards/" />
+<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-01-19-vue-navigation-guards/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-01-25T09:00:00+00:00" />
 <meta property="article:modified_time" content="2019-01-25T09:00:00+00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="VueのNavigation Guards"/>
@@ -51,6 +52,7 @@
   
   
   
+
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -66,9 +68,13 @@
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -229,7 +235,7 @@ Three ways to hook:</p>
 <li>Make sure to always call the next function, otherwise the hook will never be resolved.</li>
 </ol>
 <h2 id="global">Global</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> router <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> VueRouter({ ... })
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> router <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> VueRouter({ ... })
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#6272a4">// Before Guards
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#6272a4"></span>router.beforeEach((to, from, next) =&gt; {
@@ -248,7 +254,7 @@ Three ways to hook:</p>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>  <span style="color:#6272a4">// ...
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#6272a4"></span>})
 </code></pre></div><h2 id="pre-reoute">Pre-reoute</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> router <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> VueRouter({
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> router <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> VueRouter({
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  routes<span style="color:#ff79c6">:</span> [
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>      path<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;/foo&#39;</span>,
@@ -260,7 +266,7 @@ Three ways to hook:</p>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  ]
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>})
 </code></pre></div><h2 id="in-component">In-component</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> Foo <span style="color:#ff79c6">=</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Javascript" data-lang="Javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">const</span> Foo <span style="color:#ff79c6">=</span> {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  template<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">`...`</span>,
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  beforeRouteEnter (to, from, next) {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#6272a4">// called before the route that renders this component is confirmed.
@@ -323,9 +329,13 @@ Three ways to hook:</p>
          
           <li><a href="/">Home</a></li>
          
-          <li><a href="/posts">Writings</a></li>
+          <li><a href="/posts">Pranikah</a></li>
          
-          <li><a href="/tags">Tags</a></li>
+          <li><a href="/tags">Parenting</a></li>
+         
+          <li><a href="/tags">Kesehatan</a></li>
+         
+          <li><a href="/tags">Other</a></li>
          
           <li><a href="/about">About</a></li>
         
@@ -418,6 +428,7 @@ Three ways to hook:</p>
 
   <footer id="footer">
   <div class="footer-left">
+    
     Copyright  &copy; 2021  You 
   </div>
   <div class="footer-right">
@@ -426,9 +437,13 @@ Three ways to hook:</p>
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -436,6 +451,37 @@ Three ways to hook:</p>
     </nav>
   </div>
 </footer>
+
+<script>
+  
+  var countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+      
+    
+    var distance = countDownDate - now;
+      
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    
+    document.getElementById("countDownDate").innerHTML = days + "days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDownDate").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 
 
   </div>

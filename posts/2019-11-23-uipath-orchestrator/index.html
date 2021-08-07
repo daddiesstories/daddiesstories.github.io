@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> uipath ノート（三）- uipath orchestrator | Daddies Stories</title>
   <link rel = 'canonical' href = 'https://daddiesstories.github.io/posts/2019-11-23-uipath-orchestrator/'>
-  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="description" content="Repositori seorang calon bapack">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -24,9 +24,10 @@ https://platform.uipath.com/&lt;account name&gt;/&lt;service name&gt; 参照：U
 その他 再パブリッシュすると、Processが最新バージョンを使うため、変更作業が必要 Processes　⇒　More Options　⇒　View Process　⇒　最新のバージョンに切り替える
 ジョブの停止  停止(Stop)：必ずワークフロー内で「停止すべきか確認(Should Stop)」アクティビティを使用する 強制終了(Kill)：処理中の内容に関わらず、ジョブを停止する  アクティブなジョブは削除できない パラメーター変更の優先順位 ジョブ (Jobs) -&gt; プロセス (Processes) -&gt; パッケージ(UiPath Studio)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-11-23-uipath-orchestrator/" />
+<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-11-23-uipath-orchestrator/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-11-23T09:00:00+00:00" />
 <meta property="article:modified_time" content="2019-11-23T09:00:00+00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="uipath ノート（三）- uipath orchestrator"/>
@@ -63,6 +64,7 @@ https://platform.uipath.com/&lt;account name&gt;/&lt;service name&gt; 参照：U
   
   
   
+
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -78,9 +80,13 @@ https://platform.uipath.com/&lt;account name&gt;/&lt;service name&gt; 参照：U
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -310,9 +316,13 @@ orchestrator URLに <code>https://platform.uipath.com/</code> を入力する.
          
           <li><a href="/">Home</a></li>
          
-          <li><a href="/posts">Writings</a></li>
+          <li><a href="/posts">Pranikah</a></li>
          
-          <li><a href="/tags">Tags</a></li>
+          <li><a href="/tags">Parenting</a></li>
+         
+          <li><a href="/tags">Kesehatan</a></li>
+         
+          <li><a href="/tags">Other</a></li>
          
           <li><a href="/about">About</a></li>
         
@@ -421,6 +431,7 @@ orchestrator URLに <code>https://platform.uipath.com/</code> を入力する.
 
   <footer id="footer">
   <div class="footer-left">
+    
     Copyright  &copy; 2021  You 
   </div>
   <div class="footer-right">
@@ -429,9 +440,13 @@ orchestrator URLに <code>https://platform.uipath.com/</code> を入力する.
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -439,6 +454,37 @@ orchestrator URLに <code>https://platform.uipath.com/</code> を入力する.
     </nav>
   </div>
 </footer>
+
+<script>
+  
+  var countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+      
+    
+    var distance = countDownDate - now;
+      
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    
+    document.getElementById("countDownDate").innerHTML = days + "days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDownDate").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 
 
   </div>

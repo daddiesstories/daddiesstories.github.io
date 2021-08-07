@@ -9,16 +9,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Algorithms - Graphs | Daddies Stories</title>
   <link rel = 'canonical' href = 'https://daddiesstories.github.io/posts/2020-05-01-algorithms-graphs/'>
-  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="description" content="Repositori seorang calon bapack">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Algorithms - Graphs" />
 <meta property="og:description" content="Undirected Graphs Some problems  Path Shortest path Cycle Ehler tour: A cycle that uses each edge excatly once. Hamilton tour: A cycle that uses each vertex exactly once  classical NP-complete problem.   Connectivity MST: Biconnectivity: A vertex whose removal disconnects the graph Planarity Graph isomorphism: Are two graphs identical?  No one knows so far. A lonstanding open problem    Representations Real-world graphs tend to be sparse (huge number of vertices, small average vertex degree)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daddiesstories.github.io/posts/2020-05-01-algorithms-graphs/" />
+<meta property="og:url" content="https://daddiesstories.github.io/posts/2020-05-01-algorithms-graphs/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-05-01T09:00:00+00:00" />
 <meta property="article:modified_time" content="2020-05-01T09:00:00+00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Algorithms - Graphs"/>
@@ -47,6 +48,7 @@
   
   
   
+
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -62,9 +64,13 @@
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -321,7 +327,7 @@
 <li>Mark each visited vertex (and keep track of edge taken to visit it)</li>
 <li>Return (retrace steps) when no unvisited options</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DepthFirstPaths</span><span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DepthFirstPaths</span><span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#8be9fd;font-style:italic">private</span> blloean<span style="color:#ff79c6">[]</span> marked<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span><span style="color:#ff79c6">[]</span> edgeTO<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span> s<span style="color:#ff79c6">;</span>
@@ -358,7 +364,7 @@
 <li>Take the next vertex v from the queue and mark it</li>
 <li>Put onto the queue all unmarked vertices that are adjacent to v</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">BreadthFirstPaths</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">BreadthFirstPaths</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">boolean</span><span style="color:#ff79c6">[]</span> marked<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span><span style="color:#ff79c6">[]</span> edgeTo<span style="color:#ff79c6">;</span>
@@ -396,7 +402,7 @@
 <li>Symmetric: if v is connected to w, then w is connected to v</li>
 <li>Transitive: if v connected to w and w connected to x, then v connected to x</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">CC</span> <span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">CC</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">boolean</span><span style="color:#ff79c6">[]</span> marked<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span><span style="color:#ff79c6">[]</span> id<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span> count<span style="color:#ff79c6">;</span>
@@ -451,7 +457,7 @@
 <li>Based on iterating over vertices pointing from v</li>
 <li>Real-world digraphs tend to be sparse</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">Digraph</span> <span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">Digraph</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">int</span> V<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd;font-style:italic">final</span> Bag<span style="color:#ff79c6">&lt;</span>Integer<span style="color:#ff79c6">&gt;[]</span> adj<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
@@ -509,7 +515,7 @@
 Topological sort redraws DAG so all edges poitn upwards.</p>
 <p>use <strong>DFS</strong> again. It can be proved that reverse postorder of a DAG is a topological order.
 (check P578 for the definition of Preorder/Postorder)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DepthFirstOrder</span> <span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DepthFirstOrder</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">boolean</span><span style="color:#ff79c6">[]</span> marked<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#8be9fd;font-style:italic">private</span> Stack<span style="color:#ff79c6">&lt;</span>Integer<span style="color:#ff79c6">&gt;</span> reversePost<span style="color:#ff79c6">;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
@@ -532,7 +538,7 @@ Topological sort redraws DAG so all edges poitn upwards.</p>
 </code></pre></div><h4 id="directed-cycle-detection">Directed cycle detection</h4>
 <p>To find out if a given digraph is a DAG, we can try to find a directec cycle in the digraph.
 Use DFS and a stack to track the cycle.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#6272a4">// TODO
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#6272a4">// TODO
 </span></code></pre></div><p>Some very typical applications of directed cycle detection and topological sort:
 (A directed cycle means the problem is infeasible)</p>
 <ul>
@@ -558,7 +564,7 @@ Strong connectivity is an equvicalence relation.</p>
 </ul>
 <p>TODO: ADD Proof</p>
 <p><a href="https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/KosarajuSharirSCC.java.html">https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/KosarajuSharirSCC.java.html</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">KosarajuSharirSCC</span> <span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">KosarajuSharirSCC</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">boolean</span><span style="color:#ff79c6">[]</span> marked<span style="color:#ff79c6">;</span>     <span style="color:#6272a4">// marked[v] = has vertex v been visited?
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span><span style="color:#ff79c6">[]</span> id<span style="color:#ff79c6">;</span>             <span style="color:#6272a4">// id[v] = id of strong component containing v
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">int</span> count<span style="color:#ff79c6">;</span>            <span style="color:#6272a4">// number of strongly-connected components
@@ -709,7 +715,7 @@ If the graph is not connceted, we compute minimum spanning forest (MST of each c
 <li>esgeTo[w] is last edge on shortest known pathh from s to w</li>
 <li>if e = v-&gt;w gives shorter path to w through v, update both distTo[w] and edgeTo[w]</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">void</span> <span style="color:#50fa7b">relax</span><span style="color:#ff79c6">(</span>DirectedEdge e<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#8be9fd">void</span> <span style="color:#50fa7b">relax</span><span style="color:#ff79c6">(</span>DirectedEdge e<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#8be9fd">int</span> v <span style="color:#ff79c6">=</span> e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">from</span><span style="color:#ff79c6">(),</span> w <span style="color:#ff79c6">=</span> e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">to</span><span style="color:#ff79c6">();</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">(</span>distTo<span style="color:#ff79c6">[</span>w<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">&gt;</span> distTo<span style="color:#ff79c6">[</span>v<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">+</span> e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">weight</span><span style="color:#ff79c6">())</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>        distTo<span style="color:#ff79c6">[</span>w<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">=</span> distTo<span style="color:#ff79c6">[</span>v<span style="color:#ff79c6">]</span> <span style="color:#ff79c6">+</span> e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">weight</span><span style="color:#ff79c6">();</span>
@@ -742,7 +748,7 @@ If the graph is not connceted, we compute minimum spanning forest (MST of each c
 <li>Consider vertices in increasing order of distance from s (non-tree vertex with the lowest distTo[] value)</li>
 <li>add vertex to tree and relax all edges pointing from that vertex</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DijkstraSP</span><span style="color:#ff79c6">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">DijkstraSP</span><span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>        <span style="color:#6272a4">// ...
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">DijkstraSP</span><span style="color:#ff79c6">(</span>EdgeWeightedDigraph G<span style="color:#ff79c6">,</span> <span style="color:#8be9fd">int</span> s<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        edgeTo <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> DirectedEdge<span style="color:#ff79c6">[</span>G<span style="color:#ff79c6">.</span><span style="color:#50fa7b">V</span><span style="color:#ff79c6">()];</span>
@@ -780,7 +786,7 @@ If the graph is not connceted, we compute minimum spanning forest (MST of each c
 </ul>
 <h3 id="implement-2-topological-sort-algorithm">Implement 2: Topological sort algorithm</h3>
 <p>When the graph is a DAG, we can consider vertices in topological order and do relaxing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>    <span style="color:#6272a4">// ...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>    <span style="color:#6272a4">// ...
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#6272a4"></span>    Topological topological <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> Topological<span style="color:#ff79c6">(</span>G<span style="color:#ff79c6">);</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#ff79c6">for</span> <span style="color:#ff79c6">(</span><span style="color:#8be9fd">int</span> v <span style="color:#ff79c6">:</span> topological<span style="color:#ff79c6">.</span><span style="color:#50fa7b">order</span><span style="color:#ff79c6">())</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>        <span style="color:#ff79c6">for</span> <span style="color:#ff79c6">(</span>DirectedEdge e <span style="color:#ff79c6">:</span> G<span style="color:#ff79c6">.</span><span style="color:#50fa7b">adj</span><span style="color:#ff79c6">(</span>v<span style="color:#ff79c6">))</span> <span style="color:#ff79c6">{</span>
@@ -819,7 +825,7 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#6272a4">// ...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-Java" data-lang="Java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#6272a4">// ...
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">BellmanFordSP</span><span style="color:#ff79c6">(</span>EdgeWeightedDigraph G<span style="color:#ff79c6">,</span> <span style="color:#8be9fd">int</span> s<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        distTo  <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd">double</span><span style="color:#ff79c6">[</span>G<span style="color:#ff79c6">.</span><span style="color:#50fa7b">V</span><span style="color:#ff79c6">()];</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        edgeTo  <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> DirectedEdge<span style="color:#ff79c6">[</span>G<span style="color:#ff79c6">.</span><span style="color:#50fa7b">V</span><span style="color:#ff79c6">()];</span>
@@ -878,9 +884,13 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
          
           <li><a href="/">Home</a></li>
          
-          <li><a href="/posts">Writings</a></li>
+          <li><a href="/posts">Pranikah</a></li>
          
-          <li><a href="/tags">Tags</a></li>
+          <li><a href="/tags">Parenting</a></li>
+         
+          <li><a href="/tags">Kesehatan</a></li>
+         
+          <li><a href="/tags">Other</a></li>
          
           <li><a href="/about">About</a></li>
         
@@ -1026,6 +1036,7 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
 
   <footer id="footer">
   <div class="footer-left">
+    
     Copyright  &copy; 2021  You 
   </div>
   <div class="footer-right">
@@ -1034,9 +1045,13 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -1044,6 +1059,37 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
     </nav>
   </div>
 </footer>
+
+<script>
+  
+  var countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+      
+    
+    var distance = countDownDate - now;
+      
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    
+    document.getElementById("countDownDate").innerHTML = days + "days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDownDate").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 
 
   </div>

@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> JavaScript URI エンコーディング | Daddies Stories</title>
   <link rel = 'canonical' href = 'https://daddiesstories.github.io/posts/2019-11-10-encodeuricomponent/'>
-  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="description" content="Repositori seorang calon bapack">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -18,9 +18,10 @@
 1var set1 = &#34;;,/?:@&amp;=&#43;$#&#34;; // Reserved Characters 2var set2 = &#34;-_.!~*&#39;()&#34;; // Unreserved Marks 3 4console.log(encodeURI(set1)); // ;,/?:@&amp;=&#43;$ 5console.log(encodeURI(set2)); // -_.!~*&#39;() 6 7console.log(encodeURIComponent(set1)); // %3B%2C%2F%3F%3A%40%26%3D%2B%24 8console.log(encodeURIComponent(set2)); // -_.!~*&#39;() rfc2396 appendix-A https://tools.ietf.org/html/rfc2396#appendix-A
 URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absoluteURI = scheme &quot;:&quot; ( hier_part | opaque_part ) relativeURI = ( net_path | abs_path | rel_path ) [ &quot;?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-11-10-encodeuricomponent/" />
+<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-11-10-encodeuricomponent/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-11-10T09:00:00+00:00" />
 <meta property="article:modified_time" content="2019-11-10T09:00:00+00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaScript URI エンコーディング"/>
@@ -51,6 +52,7 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
   
   
   
+
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -66,9 +68,13 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -225,7 +231,7 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
 <code>encodeURI()</code> は完全な URI を表すのに必要な文字 (Reserved Characters) はエンコードしません。
 また、予約されていないが &ldquo;そのまま&rdquo; URI に使用できる(Unreserved Marks) 文字をエンコードしません。
 <code>encodeURIComponent()</code> は &ldquo;Unreserved Marks&rdquo; 文字をエンコードしません。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">var</span> set1 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;;,/?:@&amp;=+$#&#34;</span>; <span style="color:#6272a4">// Reserved Characters
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">var</span> set1 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;;,/?:@&amp;=+$#&#34;</span>; <span style="color:#6272a4">// Reserved Characters
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> set2 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;-_.!~*&#39;()&#34;</span>;   <span style="color:#6272a4">// Unreserved Marks
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#6272a4"></span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>console.log(<span style="color:#8be9fd;font-style:italic">encodeURI</span>(set1)); <span style="color:#6272a4">// ;,/?:@&amp;=+$
@@ -328,9 +334,13 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
          
           <li><a href="/">Home</a></li>
          
-          <li><a href="/posts">Writings</a></li>
+          <li><a href="/posts">Pranikah</a></li>
          
-          <li><a href="/tags">Tags</a></li>
+          <li><a href="/tags">Parenting</a></li>
+         
+          <li><a href="/tags">Kesehatan</a></li>
+         
+          <li><a href="/tags">Other</a></li>
          
           <li><a href="/about">About</a></li>
         
@@ -422,6 +432,7 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
 
   <footer id="footer">
   <div class="footer-left">
+    
     Copyright  &copy; 2021  You 
   </div>
   <div class="footer-right">
@@ -430,9 +441,13 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -440,6 +455,37 @@ URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot; fragment ] absolut
     </nav>
   </div>
 </footer>
+
+<script>
+  
+  var countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+      
+    
+    var distance = countDownDate - now;
+      
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    
+    document.getElementById("countDownDate").innerHTML = days + "days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDownDate").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 
 
   </div>

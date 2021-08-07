@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Object.assign() with accessor descriptor | Daddies Stories</title>
   <link rel = 'canonical' href = 'https://daddiesstories.github.io/posts/2019-03-08-object-assign-with-accessor-descriptor/'>
-  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="description" content="Repositori seorang calon bapack">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -39,9 +39,10 @@ For example
 18console.log(copy.name) // undefined
 The name property is lost." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-03-08-object-assign-with-accessor-descriptor/" />
+<meta property="og:url" content="https://daddiesstories.github.io/posts/2019-03-08-object-assign-with-accessor-descriptor/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-03-08T09:00:00+00:00" />
 <meta property="article:modified_time" content="2019-03-08T09:00:00+00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Object.assign() with accessor descriptor"/>
@@ -93,6 +94,7 @@ The name property is lost."/>
   
   
   
+
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -108,9 +110,13 @@ The name property is lost."/>
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -194,7 +200,7 @@ The name property is lost."/>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fdaddiesstories.github.io%2fposts%2f2019-03-08-object-assign-with-accessor-descriptor%2f&name=Object.assign%28%29%20with%20accessor%20descriptor&description=%3cp%3e%3ca%20href%3d%22https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fObject%2fassign%23Copying_accessors%22%3eMDN%20docs%3a%3c%2fa%3e%3c%2fp%3e%0a%3cblockquote%3e%0a%3cp%3eThe%20Object.assign%28%29%20method%20only%20copies%20enumerable%20and%20own%20properties%20from%20a%20source%20object%20to%20a%20target%20object.%20It%20uses%20%5b%5bGet%5d%5d%20on%20the%20source%20and%20%5b%5bSet%5d%5d%20on%20the%20target%2c%20so%20it%20will%20invoke%20getters%20and%20setters.%20Therefore%20it%20assigns%20properties%20versus%20just%20copying%20or%20defining%20new%20properties.%20This%20may%20make%20it%20unsuitable%20for%20merging%20new%20properties%20into%20a%20prototype%20if%20the%20merge%20sources%20contain%20getters.%3c%2fp%3e%0a%3c%2fblockquote%3e%0a%3cp%3eFor%20example%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a4%3b-o-tab-size%3a4%3btab-size%3a4%22%3e%3ccode%20class%3d%22language-js%22%20data-lang%3d%22js%22%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3eclass%3c%2fspan%3e%20Cat%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%20%20%20%20constructor%28name%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%20%20%20%20get%20name%28%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ereturn%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%20%20%20%20set%20name%28value%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20value%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20nyannko%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3enew%3c%2fspan%3e%20Cat%28%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3bnyannko%26%2334%3b%3c%2fspan%3e%29%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20copy%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eObject%3c%2fspan%3e.assign%28%7b%7d%2c%20nyannko%29%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3econsole.log%28nyannko.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20nyannko%0a%3c%2fspan%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%3c%2fspan%3econsole.log%28copy.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20undefined%0a%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eThe%20%3ccode%3ename%3c%2fcode%3e%20property%20is%20lost.%3c%2fp%3e" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fdaddiesstories.github.io%2fposts%2f2019-03-08-object-assign-with-accessor-descriptor%2f&name=Object.assign%28%29%20with%20accessor%20descriptor&description=%3cp%3e%3ca%20href%3d%22https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fObject%2fassign%23Copying_accessors%22%3eMDN%20docs%3a%3c%2fa%3e%3c%2fp%3e%0a%3cblockquote%3e%0a%3cp%3eThe%20Object.assign%28%29%20method%20only%20copies%20enumerable%20and%20own%20properties%20from%20a%20source%20object%20to%20a%20target%20object.%20It%20uses%20%5b%5bGet%5d%5d%20on%20the%20source%20and%20%5b%5bSet%5d%5d%20on%20the%20target%2c%20so%20it%20will%20invoke%20getters%20and%20setters.%20Therefore%20it%20assigns%20properties%20versus%20just%20copying%20or%20defining%20new%20properties.%20This%20may%20make%20it%20unsuitable%20for%20merging%20new%20properties%20into%20a%20prototype%20if%20the%20merge%20sources%20contain%20getters.%3c%2fp%3e%0a%3c%2fblockquote%3e%0a%3cp%3eFor%20example%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20tabindex%3d%220%22%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a6%3b-o-tab-size%3a6%3btab-size%3a6%22%3e%3ccode%20class%3d%22language-js%22%20data-lang%3d%22js%22%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3eclass%3c%2fspan%3e%20Cat%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%20%20%20%20constructor%28name%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%20%20%20%20get%20name%28%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ereturn%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%20%20%20%20set%20name%28value%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20value%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20nyannko%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3enew%3c%2fspan%3e%20Cat%28%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3bnyannko%26%2334%3b%3c%2fspan%3e%29%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20copy%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eObject%3c%2fspan%3e.assign%28%7b%7d%2c%20nyannko%29%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3econsole.log%28nyannko.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20nyannko%0a%3c%2fspan%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%3c%2fspan%3econsole.log%28copy.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20undefined%0a%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eThe%20%3ccode%3ename%3c%2fcode%3e%20property%20is%20lost.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -253,16 +259,16 @@ The name property is lost."/>
 <p>The Object.assign() method only copies enumerable and own properties from a source object to a target object. It uses [[Get]] on the source and [[Set]] on the target, so it will invoke getters and setters. Therefore it assigns properties versus just copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.</p>
 </blockquote>
 <p>For example</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">class</span> Cat {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#ff79c6">class</span> Cat {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    constructor(name) {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        <span style="color:#ff79c6">this</span>._name <span style="color:#ff79c6">=</span> name;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        <span style="color:#ff79c6">this</span>.<span style="color:#bd93f9">_</span>name <span style="color:#ff79c6">=</span> name;
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    }
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>    get name() {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">this</span>._name;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">this</span>.<span style="color:#bd93f9">_</span>name;
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    }
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    set name(value) {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        <span style="color:#ff79c6">this</span>._name <span style="color:#ff79c6">=</span> value;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        <span style="color:#ff79c6">this</span>.<span style="color:#bd93f9">_</span>name <span style="color:#ff79c6">=</span> value;
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    }
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>}
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>
@@ -273,7 +279,7 @@ The name property is lost."/>
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#6272a4"></span>console.log(copy.name) <span style="color:#6272a4">// undefined
 </span></code></pre></div><p>The <code>name</code> property is lost.</p>
 <p>To copy accessors, we can use <code>Object.getOwnPropertyDescriptor()</code> and <code>Object.defineProperty()</code> as the MDN docs recommend:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">var</span> obj <span style="color:#ff79c6">=</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8be9fd;font-style:italic">var</span> obj <span style="color:#ff79c6">=</span> {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  foo<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span>,
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  get bar() {
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#ff79c6">return</span> <span style="color:#bd93f9">2</span>;
@@ -307,7 +313,7 @@ The name property is lost."/>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>console.log(copy);
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span style="color:#6272a4">// { foo:1, get bar() { return 2 } }
 </span></code></pre></div><p>The other way is <code>Object.prototype.__proto__</code> (but <strong>not recommended</strong>):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">let</span> completeCopy <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">Object</span>.assign({__proto__<span style="color:#ff79c6">:</span> nyannko.__proto__}, nyannko);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:6;-o-tab-size:6;tab-size:6"><code class="language-js" data-lang="js"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">let</span> completeCopy <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">Object</span>.assign({<span style="color:#bd93f9">__</span>proto__<span style="color:#ff79c6">:</span> nyannko.<span style="color:#bd93f9">__</span>proto__}, nyannko);
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>console.log(completeCopy.name); <span style="color:#6272a4">// nyannko
 </span></code></pre></div><p><code>Object.prototype.__proto__</code> is deprecated so be aware that this may cease to work at any time.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a></p>
@@ -329,9 +335,13 @@ The name property is lost."/>
          
           <li><a href="/">Home</a></li>
          
-          <li><a href="/posts">Writings</a></li>
+          <li><a href="/posts">Pranikah</a></li>
          
-          <li><a href="/tags">Tags</a></li>
+          <li><a href="/tags">Parenting</a></li>
+         
+          <li><a href="/tags">Kesehatan</a></li>
+         
+          <li><a href="/tags">Other</a></li>
          
           <li><a href="/about">About</a></li>
         
@@ -386,7 +396,7 @@ The name property is lost."/>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fdaddiesstories.github.io%2fposts%2f2019-03-08-object-assign-with-accessor-descriptor%2f&name=Object.assign%28%29%20with%20accessor%20descriptor&description=%3cp%3e%3ca%20href%3d%22https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fObject%2fassign%23Copying_accessors%22%3eMDN%20docs%3a%3c%2fa%3e%3c%2fp%3e%0a%3cblockquote%3e%0a%3cp%3eThe%20Object.assign%28%29%20method%20only%20copies%20enumerable%20and%20own%20properties%20from%20a%20source%20object%20to%20a%20target%20object.%20It%20uses%20%5b%5bGet%5d%5d%20on%20the%20source%20and%20%5b%5bSet%5d%5d%20on%20the%20target%2c%20so%20it%20will%20invoke%20getters%20and%20setters.%20Therefore%20it%20assigns%20properties%20versus%20just%20copying%20or%20defining%20new%20properties.%20This%20may%20make%20it%20unsuitable%20for%20merging%20new%20properties%20into%20a%20prototype%20if%20the%20merge%20sources%20contain%20getters.%3c%2fp%3e%0a%3c%2fblockquote%3e%0a%3cp%3eFor%20example%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a4%3b-o-tab-size%3a4%3btab-size%3a4%22%3e%3ccode%20class%3d%22language-js%22%20data-lang%3d%22js%22%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3eclass%3c%2fspan%3e%20Cat%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%20%20%20%20constructor%28name%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%20%20%20%20get%20name%28%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ereturn%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%20%20%20%20set%20name%28value%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e._name%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20value%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20nyannko%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3enew%3c%2fspan%3e%20Cat%28%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3bnyannko%26%2334%3b%3c%2fspan%3e%29%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20copy%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eObject%3c%2fspan%3e.assign%28%7b%7d%2c%20nyannko%29%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3econsole.log%28nyannko.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20nyannko%0a%3c%2fspan%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%3c%2fspan%3econsole.log%28copy.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20undefined%0a%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eThe%20%3ccode%3ename%3c%2fcode%3e%20property%20is%20lost.%3c%2fp%3e" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fdaddiesstories.github.io%2fposts%2f2019-03-08-object-assign-with-accessor-descriptor%2f&name=Object.assign%28%29%20with%20accessor%20descriptor&description=%3cp%3e%3ca%20href%3d%22https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fObject%2fassign%23Copying_accessors%22%3eMDN%20docs%3a%3c%2fa%3e%3c%2fp%3e%0a%3cblockquote%3e%0a%3cp%3eThe%20Object.assign%28%29%20method%20only%20copies%20enumerable%20and%20own%20properties%20from%20a%20source%20object%20to%20a%20target%20object.%20It%20uses%20%5b%5bGet%5d%5d%20on%20the%20source%20and%20%5b%5bSet%5d%5d%20on%20the%20target%2c%20so%20it%20will%20invoke%20getters%20and%20setters.%20Therefore%20it%20assigns%20properties%20versus%20just%20copying%20or%20defining%20new%20properties.%20This%20may%20make%20it%20unsuitable%20for%20merging%20new%20properties%20into%20a%20prototype%20if%20the%20merge%20sources%20contain%20getters.%3c%2fp%3e%0a%3c%2fblockquote%3e%0a%3cp%3eFor%20example%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20tabindex%3d%220%22%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a6%3b-o-tab-size%3a6%3btab-size%3a6%22%3e%3ccode%20class%3d%22language-js%22%20data-lang%3d%22js%22%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3eclass%3c%2fspan%3e%20Cat%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%20%20%20%20constructor%28name%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20name%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%20%20%20%20get%20name%28%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ereturn%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%20%20%20%20set%20name%28value%29%20%7b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%20%20%20%20%20%20%20%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3ethis%3c%2fspan%3e.%3cspan%20style%3d%22color%3a%23bd93f9%22%3e_%3c%2fspan%3ename%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20value%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%20%20%20%20%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%7d%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20nyannko%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3enew%3c%2fspan%3e%20Cat%28%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3bnyannko%26%2334%3b%3c%2fspan%3e%29%3b%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3elet%3c%2fspan%3e%20copy%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eObject%3c%2fspan%3e.assign%28%7b%7d%2c%20nyannko%29%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%0a%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3econsole.log%28nyannko.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20nyannko%0a%3c%2fspan%3e%3cspan%20style%3d%22margin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%3c%2fspan%3econsole.log%28copy.name%29%20%3cspan%20style%3d%22color%3a%236272a4%22%3e%2f%2f%20undefined%0a%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eThe%20%3ccode%3ename%3c%2fcode%3e%20property%20is%20lost.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -417,6 +427,7 @@ The name property is lost."/>
 
   <footer id="footer">
   <div class="footer-left">
+    
     Copyright  &copy; 2021  You 
   </div>
   <div class="footer-right">
@@ -425,9 +436,13 @@ The name property is lost."/>
          
         <li><a href="/">Home</a></li>
          
-        <li><a href="/posts">Writings</a></li>
+        <li><a href="/posts">Pranikah</a></li>
          
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">Parenting</a></li>
+         
+        <li><a href="/tags">Kesehatan</a></li>
+         
+        <li><a href="/tags">Other</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -435,6 +450,37 @@ The name property is lost."/>
     </nav>
   </div>
 </footer>
+
+<script>
+  
+  var countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+      
+    
+    var distance = countDownDate - now;
+      
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    
+    document.getElementById("countDownDate").innerHTML = days + "days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countDownDate").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
 
 
   </div>

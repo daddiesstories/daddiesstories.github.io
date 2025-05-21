@@ -1,7 +1,24 @@
 # My Notes
 Selamat datang! This content is written in Markdown.
 
-## Ayat Hari Ini – Surah Al-Ikhlas
+## Surah Al-Mu'minun 12-14
+<div dir="rtl" style="font-family: 'Amiri', serif; font-size: 1.5em; text-align: right;">
+<br>
+وَلَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ مِن سُلَـٰلَةٍۢ مِّن طِينٍۢ ١٢
+Dan sungguh, Kami telah menciptakan manusia dari saripati (berasal) dari tanah.
+<br>
+ثُمَّ جَعَلْنَـٰهُ نُطْفَةًۭ فِى قَرَارٍۢ مَّكِينٍۢ ١٣
+Kemudian Kami menjadikannya air mani (yang disimpan) dalam tempat yang kokoh (rahim).
+<br>
+Orang-Orang Mukmin (23:14) 
+
+ثُمَّ خَلَقْنَا ٱلنُّطْفَةَ عَلَقَةًۭ فَخَلَقْنَا ٱلْعَلَقَةَ مُضْغَةًۭ فَخَلَقْنَا ٱلْمُضْغَةَ عِظَـٰمًۭا فَكَسَوْنَا ٱلْعِظَـٰمَ لَحْمًۭا ثُمَّ أَنشَأْنَـٰهُ خَلْقًا ءَاخَرَ ۚ فَتَبَارَكَ ٱللَّهُ أَحْسَنُ ٱلْخَـٰلِقِينَ ١٤
+
+Kemudian, air mani itu Kami jadikan sesuatu yang melekat, lalu sesuatu yang melekat itu Kami jadikan segumpal daging, dan segumpal daging itu lalu Kami jadikan tulang belulang, lalu tulang belulang itu Kami bungkus dengan daging. Kemudian, Kami menjadikannya makhluk yang (berbentuk) lain. Mahasuci Allah, Pencipta yang paling baik.
+</div>
+
+
+## Surah Al-Ikhlas
 
 <div dir="rtl" style="font-family: 'Amiri', serif; font-size: 1.5em; text-align: right;">
   قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝<br>

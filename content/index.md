@@ -8,9 +8,9 @@ Selamat datang! This content is written in Markdown.
 
 ## Daftar Isi
 Berikut daftar isi untuk memudahkan navigasi:
-- See the section on [Day 1](#day 1).
-- See the section on [Day2](#day2).
-- See the section on [Day 3](#day 3).
+- See the section on [Day 1](#day1).
+- See the section on [Day 2](#day2).
+- See the section on [Day 3](#day3).
 
 ---
 

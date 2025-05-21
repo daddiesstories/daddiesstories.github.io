@@ -1,9 +1,20 @@
 # My Notes
 Selamat datang! This content is written in Markdown.
 
-### Surah
+## Ayat Hari Ini – Surah Al-Ikhlas
 
-قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ ١
+<div dir="rtl" style="font-family: 'Amiri', serif; font-size: 1.5em; text-align: right;">
+  قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝<br>
+  ٱللَّهُ ٱلصَّمَدُ ۝<br>
+  لَمْ يَلِدْ وَلَمْ يُولَد ۝<br>
+  وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ ۝
+</div>
+
+> _"Katakanlah: Dialah Allah, Yang Maha Esa.  
+Allah tempat meminta segala sesuatu.  
+Dia tiada beranak dan tidak pula diperanakkan.  
+Dan tidak ada seorang pun yang setara dengan-Nya."_  
+(QS. Al-Ikhlas 112:1–4)
 
 
 ## Daftar Isi

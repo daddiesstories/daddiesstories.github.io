@@ -44,8 +44,9 @@
                     return response.text();
                 })
                 .then(markdown => {
+                    
                     // Initialize the Showdown converter
-                    const converter = new showdown.Converter();
+                    const converter = new showdown.Converter({ tables: true });
 
                     // Convert Markdown to HTML
                     const htmlContent = converter.makeHtml(markdown);
